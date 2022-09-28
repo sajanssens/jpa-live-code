@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3f89de7-77c6-4330-8f09-634ae9d49310" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/JdbcDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/JdbcDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
       <recent name="C:\Git\Github\sajanssens\jpa-live-code\jpa-live-code" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.JpaDemo">
     <configuration name="JdbcDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.JdbcDemo" />
       <module name="jpa-live-code" />
@@ -78,8 +75,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JpaDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.JpaDemo" />
+      <module name="jpa-live-code" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JpaDemo" />
         <item itemvalue="Application.JdbcDemo" />
       </list>
     </recent_temporary>
@@ -95,7 +106,7 @@
       <workItem from="1664355492639" duration="814000" />
       <workItem from="1664356354210" duration="2202000" />
       <workItem from="1664359184542" duration="153000" />
-      <workItem from="1664359365706" duration="2110000" />
+      <workItem from="1664359365706" duration="4049000" />
     </task>
     <task id="LOCAL-00001" summary="First.">
       <created>1664356391801</created>
@@ -104,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664356391801</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="More JDBC.">
+      <created>1664363924308</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664363924308</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +130,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First." />
-    <option name="LAST_COMMIT_MESSAGE" value="First." />
+    <MESSAGE value="More JDBC." />
+    <option name="LAST_COMMIT_MESSAGE" value="More JDBC." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

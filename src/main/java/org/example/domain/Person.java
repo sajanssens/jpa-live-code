@@ -1,13 +1,20 @@
 package org.example.domain;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Data
-@Builder
-public class Person {
+@Data @Builder @NoArgsConstructor @AllArgsConstructor
+@Entity
+public class Person { // POJO
 
-    private long id;
-    private String name;
-    private int age;
+    @Id @GeneratedValue
+    private Long id;
+
+    private String name = null;
+    private int age = 0;
 }
