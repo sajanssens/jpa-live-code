@@ -7,33 +7,33 @@ import java.util.Optional;
 import java.util.function.Function;
 
 @Slf4j
-public class PersonDao {
+public class TeamDao {
 
     private EntityManager em;
 
-    public PersonDao(EntityManager em) {
+    public TeamDao(EntityManager em) {
         this.em = em;
     }
 
-    public void create(Person person) {
+    public void create(Team person) {
         executeInTransaction(person, this::persist);
     }
 
-    public Optional<Person> read(long id) {
-        return Optional.ofNullable(em.find(Person.class, id));
+    public Optional<Team> read(long id) {
+        return Optional.ofNullable(em.find(Team.class, id));
     }
 
     public void updateName(long id, String name) {
-        Person person = read(id).get();
+        Team person = read(id).get();
         person.setName(name);
         executeInTransaction(person, this::merge);
     }
 
-    public Person update(Person p) {
+    public Team update(Team p) {
         return executeInTransaction(p, this::merge);
     }
 
-    public void delete(Person p) {
+    public void delete(Team p) {
         executeInTransaction(p, this::remove);
     }
 
@@ -51,16 +51,16 @@ public class PersonDao {
         return null;
     }
 
-    private Person persist(Person p) {
+    private Team persist(Team p) {
         em.persist(p);
         return p;
     }
 
-    private Person merge(Person p) {
+    private Team merge(Team p) {
         return em.merge(p);
     }
 
-    private Person remove(Person p) {
+    private Team remove(Team p) {
         em.remove(p);
         return p;
     }
